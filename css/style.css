@@ -230,3 +230,40 @@ margin: 10px, 0;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 4px;
+}
+
+.example-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.example-form button:hover {
+    background-color: var(--secondary-color);
+}
+
