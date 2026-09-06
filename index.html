@@ -499,38 +499,93 @@
             </div>
             <!-- tabla (table)-->
             <div class="tag-card" id = "tablas">
-                <div class= "tag-header">
+                <div class="tag-header">
                     <h2> <i class= "fast info-circle"> </i>descripcion </h2>
-
-
-
-
-
-
-
-
-
-
-                            <li><strong>type</strong>: Ancho del borde de la tabla</li>
-                            <li><strong>start</strong>: Espacio dentro de las celdas</li>
-                            <li><strong>reversed</strong>: Espacio entre celdas</li>
-                            <li><strong>id</strong>: Ancho de la tabla</li>
-                </ul>
+                    <p>Crea una tabla para mostrar datos tabulares. Se compone de:
+                        filas (&lt;tr&gt;), celdas de encabezado (&lt;th&gt;) y
+                        celdas de datos (&lt;td&gt;)
+                    </p>
                 </div>
+
                 <div class="tag-section">
-                    <h3><i class="fast-code"></i>Ejemplo de codigo></h3>
+                    <h3><i class="fast-cog"></i>Atributos Comúnes</h3>
+                    <ul class="atrributes-list">
+                        <li><strong>border</strong>: Ancho del borde de la tabla</li>
+                        <li><strong>cellpadding</strong>: Espacio dentro de las celdas</li>
+                        <li><strong>cellspacing</strong>: Espacio entre celdas</li>
+                        <li><strong>width</strong>: Ancho de la tabla</li>
+                    </ul>
+                </div>
+
+                <div class="tag-section"></div>   
+                    <h3><i class="fast-code"></i>Ejemplo de código</h3>
                     <div class="code-example">
                         <pre><code>
-                            &lt;table&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                            &lt;th&gt;Encabezado 3&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Dato 1&lt;/td&gt;
+                                &lt;td&gt;Dato 2&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
                         </code></pre>
-      </div>
                     </div>
+                </div>
+                    
+                <div class="tag-section">
+                    <h3><i class=fast paint-brush></i>CSS Asociado</h3>
+                    <div class="code-example">
+                        <pre><code>
+                            table {
+                            width: 100%;
+                            border-collapase: collapse;
+                            margin: 1rem 0;
+                            }
+
+                            th, td {
+                                border: 1px solid #ddd;
+                                padding: 8px;
+                                text-align: left;
+                            }
+                            th {
+                                background-color: var(--primary-color);
+                                color: white;
+                            }
+
+                            tr: nth-child(even){
+                                background-color: #f2f2f2;
+                            }
+                        </code></pre>
                     </div>
+                    <p>Estas reglas mejoran la apariencia y legibilidad de las tablas.</p>
+                </div>
+            
+                <div class="tag-section"></div>
+                    <h3><i class="fast-eye"></i>Resultado visual</h3>
+                    <div class="visual-example">
+                        <table class="example-table">
+                            <tr>
+                                <th>Encabezado 1</th>
+                                <th>Encabezado 2</th>
+                            </tr>
+                            <tr>
+                                <td>Dato 1</td>
+                                <td>Dato 2</td>
+                            </tr>
+                            <tr>
+                                <td>Dato 3</td>
+                                <td>Dato 4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
     </div>
-      &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Dato 1&lt;/td&gt;
-        &lt;td&gt;Dato 2&lt;/td&gt;
-    &lt;/tr&gt;  
 </body>
-</html>
