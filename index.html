@@ -54,12 +54,14 @@
                     <div class="tag-section">
                         <h3><i class="fast code"></i>Ejemplo de código</h3>
                         <div class="code-example">
-                            <pre><code>&lt;h1&gt; Título Principal &lt;h1&gt;
-                                &lt;h2&gt;Subtítulo&lt;/h2&gt;
-                                &lt;h3&gt;Sección&lt;/h3&gt;
-                                &lt;h4&gt;Subsección&lt;/h4&gt;
-                                &lt;h5&gt;Apartado&lt;/h5&gt;
-                                &lt;h6&gt;Detalle&lt;/h6&gt;</code></pre>
+                            <pre><code>
+&lt;h1&gt; Título Principal &lt;h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Sección&lt;/h3&gt;
+&lt;h4&gt;Subsección&lt;/h4&gt;
+&lt;h5&gt;Apartado&lt;/h5&gt;
+&lt;h6&gt;Detalle&lt;/h6&gt;
+                            </code></pre>
                         </div>
                     </div>
 
@@ -67,12 +69,12 @@
                         <h3><i class="fast paint-brush"></i>CSS Asociado</h3>
                         <div class="code-example">
                             <pre><code>
-                                h1 { font-size: 2rem; }
-                                h2 { font-size: 1.8rem; }
-                                h3 { font-size: 1.6rem; }
-                                h4 { font-size: 1.4rem; }
-                                h5 { font-size: 1.2rem; }
-                                h6 { font-size: 1rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
                             </code></pre>
                         </div>
                         <p>Estas reglas establecen los tamaños
@@ -119,9 +121,10 @@
                     <div class="tag-section">
                         <h3><i class="fast code"></i>Ejemplo de código</h3>
                         <div class="code-example">
-                            <pre><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
-                                &lt;p&gt;Otro párrafo con &lt;strong&gt; texto en negrita.&lt;/strong&gt;
-                                y &lt;em&gt;texto en cursiva &lt;/em&gt;.&lt;/p&gt; 
+                            <pre><code>
+&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;p&gt;Otro párrafo con &lt;strong&gt; texto en negrita.&lt;/strong&gt;
+y &lt;em&gt;texto en cursiva &lt;/em&gt;.&lt;/p&gt; 
                             </code></pre>
                         </div>
                     </div>
@@ -130,11 +133,11 @@
                         <h3><i class="fast paint-brush"></i>CSS Asociado</h3>
                         <div class="code-example">
                             <pre><code>
-                                p {
-                                    margin-bottom: 1rem;
-                                    line-height: 1.6;
-                                    text-align: justify;
-                                }
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
                             </code></pre>
                         </div>
                         <p>Estas reglas mejoran la legibilidad con espaciado entre párrafos
@@ -600,14 +603,90 @@
                </div> 
                <div class="tag-section">
                    <h3><i class="fast-cog"></i>Atributos comunes</h3>
-                   <li><strong>action</strong>: url donde se envían los datos del formulario.</li>
-                   <li><strong>method</strong>: Método attp para enviar datos (GET, POST)</li>
-                   <li><strong>name</strong>: Nombre del formulario</li>
-                   <li><strong>target</strong>: Dónde mostrar la respuesta (_blank, _self)</li>
-                   <li><strong>autocomplete</strong>: Habilita/Deshabilita el autocompletado.</li>
+                   <ul class="attributes-list">
+                       <li><strong>action</strong>: url donde se envían los datos del formulario.</li>
+                       <li><strong>method</strong>: Método attp para enviar datos (GET, POST)</li>
+                       <li><strong>name</strong>: Nombre del formulario</li>
+                       <li><strong>target</strong>: Dónde mostrar la respuesta (_blank, _self)</li>
+                       <li><strong>autocomplete</strong>: Habilita/Deshabilita el autocompletado.</li>
+                   </ul> 
+               </div> 
+
+               <div class="tag-section">
+                   <h3><i class="fast-code"></i>Ejemplo de código</h3>
+                   <div class="code-example">
+                       <pre><code>
+                           &lt;form action="/procesar"method="post"&gt;
+                           &lt; label for="nombre"&gt;Nombre&lt;/label&gt;
+                           &lt;input type="text" id="nombre" name="nombre"&gt;
+                           
+                           &lt; label for="email"&gt;Email&lt;/label&gt;
+                           &lt;input type="email" id="email" name="email"&gt;
+
+                           &lt; button type="submit"&gt;Enviar&lt;/button&gt;
+                        &lt;/form&gt;
+                       </code></pre>
+                   </div>
+               </div>
+
+               <div class="tag-section">
+                   <h3><i class="fast paint-brush"></i>CSS Asociado</h3>
+                   <div class="code-example">
+                       <pre><code>
+                           form {
+                               background-color: fff;
+                               padding: 20px;
+                               border-radius: 8px;
+                               box-shadow: 0 2px 4px rgba(0,0,0,0.1)
+                           }
+
+                           label {
+                               display: block;
+                               margin-bottom: 5px;
+                               font-weight: bold;
+                           }
+
+                           input, textarea, select {
+                               width 100%;
+                               padding: 8px;
+                               margin: 5px 0 15px;
+                               border: 1px solid #ddd;
+                               border-radius: 4px;
+                           }
+
+                           button {
+                               background-color: var(--primary-color);
+                               color: white;
+                               border: none;
+                               padding: 10px 20px;
+                               border-radius: 4px;
+                               cursor: pointer;
+                           }
+                       </code></pre>
+                   </div>
+                   <p>Estas reglas mejoran la apariencia y la visibilidad del formulario.</p>
+               </div> 
+
+               <div class="tag-section">
+                   <h3><<i class="fast-eye"></i>Resultado visual</h3>
+                   <div class="visual-example">
+                       <form class="example-form">
+                           <label for="nombre">Nombre:</label>
+                           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                           <label for="email">Email:</label>
+                           <input type="email" id="email" name="email" placeholder="ejemplo@itc.edu.co">
+
+                           <button type="submit">Enviar</button>
+                       </form>    
+                   </div> 
                </div> 
             </div>
         </div>
     </div>
+    <footer>
+        <p>Guía de etiquetas en HTML &copy; 2026</p>
+        <p>Estructurado para el aprendizaje de HTML y CSS</p>
+    </footer>
     <script src="javascript/script.js"></script>
 </body>
